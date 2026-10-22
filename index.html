@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lunch Roulette — Match, Munch & Mingle!</title>
+<meta name="description" content="Become a Secret Host for the IVI GTH-B excursion on November 5, 2026.">
+<style>
+:root{--ink:#102f57;--paper:#ffffff;--orange:#0788cf;--yellow:#d9f1ff;--mint:#e7f5fc;--blue:#c9e8f8;--line:rgba(16,47,87,.2)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+a{color:inherit}.accent{color:#ef8055}.wrap{width:min(1080px,calc(100% - 40px));margin:auto}
+.topline{display:flex;justify-content:space-between;align-items:center;padding:22px 0;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid var(--line)}
+.hero{padding:52px 0 42px;position:relative;overflow:hidden;min-height:560px}.eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:800}
+h1{font-size:clamp(64px,11vw,132px);line-height:.78;letter-spacing:-.09em;margin:24px 0 20px;font-weight:900;max-width:650px;position:relative;z-index:2}
+h1 span{color:var(--orange);display:block}.tagline{font-size:clamp(20px,3vw,30px);font-weight:800;margin:0 0 12px}.subline{font-size:16px;line-height:1.6;max-width:520px}
+.hero-art{position:absolute;right:1%;top:24px;width:min(43%,460px);z-index:1}.hero-art svg{display:block;width:100%;height:auto}.event-card{position:relative;z-index:2;display:flex;flex-direction:column;align-items:flex-start;gap:6px;width:max-content;max-width:100%;margin-top:28px;padding:16px 20px;background:#ffffff;border:1px solid #d4e5f2;border-radius:12px;box-shadow:0 8px 22px rgba(16,47,87,.10);color:var(--ink)}.event-card .event-detail{padding:0;flex:none;font-size:18px;line-height:1.55}.event-card .event-detail+.event-detail{border-left:0}.event-card b{display:inline;font-size:18px;line-height:1.55;letter-spacing:0;font-weight:800}.event-card span{display:inline;margin:0;font-size:18px;line-height:1.55;font-weight:800;letter-spacing:0;text-transform:none}.event-card .place{flex-basis:auto}.event-card .place b{font-size:18px;line-height:1.55}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);margin-top:36px}.fact{padding:18px 16px;border-right:1px solid var(--line)}.fact:last-child{border:0}.fact b{display:block;font-size:clamp(23px,3vw,36px);letter-spacing:-.05em}.fact span{font-size:11px;text-transform:uppercase;letter-spacing:.12em;font-weight:800;display:block;margin-top:7px}
+section{padding:58px 0}.section-label{font-size:11px;text-transform:uppercase;letter-spacing:.16em;font-weight:900;margin-bottom:14px}.raffle-heading{font-size:clamp(27px,4.5vw,54px);white-space:nowrap;max-width:none}h2{font-size:clamp(34px,6vw,64px);line-height:.95;letter-spacing:-.06em;margin:0 0 22px;max-width:760px}.intro{font-size:18px;line-height:1.7;max-width:760px}.mission{display:block}.invitation-content,.mission-content{max-width:850px}.invitation-content h2,.mission-content h2{margin-bottom:22px}.mission-content .note{max-width:850px}.note{background:var(--mint);padding:28px;border-radius:4px;font-size:16px;line-height:1.65}.note strong{font-size:22px;display:block;margin-bottom:10px}
+.schedule{border-top:2px solid var(--ink)}.event{display:grid;grid-template-columns:180px 1fr;gap:20px;padding:24px 0;border-bottom:1px solid var(--line)}.time{font-weight:900;font-size:18px}.event h3{margin:0 0 8px;font-size:23px;letter-spacing:-.03em}.event p{margin:0;line-height:1.6;max-width:650px}
+.prizes{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.prize{min-height:190px;padding:18px;background:#fffdf7;border:1px solid var(--line);display:flex;flex-direction:column;justify-content:space-between}.prize:nth-child(2){background:var(--blue)}.prize:nth-child(3){background:var(--yellow)}.prize:nth-child(4){background:#f9d5c9}.prize .emoji{font-size:38px}.prize h3{font-size:19px;margin:18px 0 5px}.prize p{font-size:12px;margin:0;opacity:.75}.image-note{font-size:11px;opacity:.7;margin-top:12px}
+.signup{background:#102f57;color:#ffffff;padding:42px;border-radius:5px;display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}.signup h2{margin-bottom:12px} .signup-heading{font-size:clamp(27px,3.5vw,42px);letter-spacing:-.055em;white-space:nowrap}.slots{font-size:13px;text-transform:uppercase;letter-spacing:.12em;font-weight:800}.slots strong{display:block;font-size:68px;letter-spacing:-.08em;color:#ef8055;line-height:1.1}.signup p{line-height:1.65}.cta{display:inline-flex;align-items:center;justify-content:center;gap:12px;background:var(--orange);color:#fff;text-decoration:none;font-weight:900;padding:18px 22px;border-radius:3px;margin-top:12px;transition:transform .15s}.cta:hover{transform:translateY(-3px)}.email{font-weight:800;text-decoration:underline;overflow-wrap:anywhere}.foot{padding:28px 0 38px;display:flex;justify-content:space-between;gap:20px;font-size:12px;border-top:1px solid var(--line);margin-top:48px}
+@media(max-width:720px){.signup-heading{font-size:clamp(22px,5.8vw,32px);white-space:normal}.raffle-heading{font-size:clamp(22px,6vw,36px);letter-spacing:-.07em}.hero{min-height:0;padding-top:34px}.hero-art{position:relative;top:auto;right:auto;width:min(100%,360px);margin:12px auto -8px}.event-card{margin-top:18px}.event-card .event-detail{padding:13px 11px}.event-card b{font-size:18px}.event-card .place b{font-size:13px}.event-card span{font-size:9px} .mission,.signup{grid-template-columns:1fr}.event{grid-template-columns:1fr;gap:8px}.prizes{grid-template-columns:repeat(2,1fr)}.signup{padding:28px}.foot{flex-direction:column}}
+</style>
+</head>
+<body>
+<header class="wrap topline"><span>TCS · A Networking Activity</span><span>IVI × GTH-B</span></header>
+<main>
+<section class="wrap hero">
+  <h1>Lunch<span>Roulette</span></h1>
+  <p class="tagline">Match, Munch &amp; Mingle!</p>
+  <p class="subline">Get matched, share a meal, meet the world.</p>
+  <div class="hero-art" aria-label="Roulette wheel and gift illustration">
+    <svg viewBox="0 0 460 390" role="img" aria-label="Blue, white and orange roulette wheel with a wrapped gift">
+      <defs>
+        <linearGradient id="wheelBlue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0788cf"/><stop offset="1" stop-color="#0754a1"/></linearGradient>
+        <filter id="shadow" x="-30%" y="-30%" width="156%" height="156%"><feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#102f57" flood-opacity=".18"/></filter>
+      </defs>
+      <g transform="translate(230 170) rotate(-12)" filter="url(#shadow)">
+        <circle r="145" fill="#d7effc" stroke="#102f57" stroke-width="8"/>
+        <path d="M0 0 L0 -133 A133 133 0 0 1 115.2 -66.5 Z" fill="#0788cf"/>
+        <path d="M0 0 L115.2 -66.5 A133 133 0 0 1 115.2 66.5 Z" fill="#fff"/>
+        <path d="M0 0 L115.2 66.5 A133 133 0 0 1 0 133 Z" fill="#ef8055"/>
+        <path d="M0 0 L0 133 A133 133 0 0 1 -115.2 66.5 Z" fill="#0788cf"/>
+        <path d="M0 0 L-115.2 66.5 A133 133 0 0 1 -115.2 -66.5 Z" fill="#fff"/>
+        <path d="M0 0 L-115.2 -66.5 A133 133 0 0 1 0 -133 Z" fill="#1476bd"/>
+        <circle r="28" fill="#102f57" stroke="#fff" stroke-width="7"/>
+        <text x="0" y="10" fill="#fff" text-anchor="middle" font-size="30" font-weight="900">?</text>
+      </g>
+      <g transform="translate(285 300) rotate(8)" filter="url(#shadow)">
+        <rect x="0" y="0" width="110" height="78" rx="9" fill="#fff" stroke="#102f57" stroke-width="3"/>
+        <rect x="-6" y="-12" width="122" height="23" rx="5" fill="#0788cf" stroke="#102f57" stroke-width="3"/>
+        <rect x="46" y="-12" width="17" height="90" fill="#ef8055"/>
+        <path d="M54 -12 C20 -16 22 -49 42 -45 C54 -43 55 -24 54 -12Z" fill="#ef8055" stroke="#102f57" stroke-width="3"/>
+        <path d="M55 -12 C89 -16 87 -49 67 -45 C55 -43 54 -24 55 -12Z" fill="#ef8055" stroke="#102f57" stroke-width="3"/>
+        <path d="M24 35h62M24 49h46" stroke="#d1e7f6" stroke-width="5" stroke-linecap="round"/>
+      </g>
+      <path d="M45 120l-16 -15M58 91l-5 -21M81 75l4 -20" stroke="#ef8055" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="390" cy="76" r="5" fill="#ef8055"/><circle cx="411" cy="99" r="3" fill="#0788cf"/>
+    </svg>
+  </div>
+  <div class="event-card" aria-label="Event date, time and location">
+    <div class="event-detail"><span>Date:</span> <b>THU, NOV 5, 2026</b></div>
+    <div class="event-detail"><span>Time:</span> <b>11:30</b></div>
+    <div class="event-detail place"><span>Location:</span> <b>IVI Lobby</b></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="section-label">The invitation</div>
+  <div class="invitation-content">
+    <h2>When the world visits IVI,<br>share a table.</h2>
+    <div class="intro">On <strong class="accent">November 5</strong>, <strong>156</strong> vaccine professionals from <strong>31</strong> countries visit IVI on their GTH-B excursion. Over lunch, TCS is looking for <strong class="accent">12 staff</strong> to each welcome one guest as a <strong>Secret Host</strong>.</div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="section-label">The mission</div>
+  <div class="mission-content">
+    <h2>So… what’s a Secret Host?</h2>
+    <div class="note"><strong>No agenda. Just a good conversation.</strong> We’ll pair you with one GTH-B guest in advance. If you know IVI well or have a broad network, this is a great opportunity to share your knowledge and help build connections with our visiting guest — all over a relaxed lunch and a good conversation, one professional to another!</div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="section-label">The day</div>
+  <h2>Schedule</h2>
+  <div class="schedule">
+    <div class="event"><div class="time">By 12:00</div><div><h3>Grab the gift &amp; take your table</h3><p>Just before 12:00, pick up your matched guest’s gift (Room 1115M, 1F), then head to your table and wait for them there.</p></div></div>
+    <div class="event"><div class="time accent">12:00–12:30</div><div><h3>Your guest arrives ✨</h3><p>They’ll come looking for you as part of a fun little activity! Welcome them and hand over the gift.</p></div></div>
+    <div class="event"><div class="time">12:00–13:00</div><div><h3>Plate up &amp; eat together</h3><p>Head to the buffet with your guest, then enjoy lunch and conversation. Your teammates can join the table.</p></div></div>
+    <div class="event"><div class="time">14:00–16:00</div><div><h3>🎁 Thank-you gift collection</h3><p>Pick up your thank-you gift (Room 1115M, 1F).</p></div></div>
+  </div>
+  <p class="image-note">Times may shift slightly depending on the day’s programme. Join for as much or as little as your schedule allows.</p>
+</section>
+
+<section class="wrap">
+  <div class="section-label">For you</div>
+  <h2 class="raffle-heading">A raffle where everyone wins.</h2>
+  <p class="intro">As our thank-you, all 12 registered hosts draw a raffle ticket — and every ticket is a winner. 100% winning odds. Here’s the prize pool:</p>
+  <div class="prizes" style="margin-top:26px">
+    <article class="prize"><div class="emoji">🎒</div><div><h3>GTH-B Backpack</h3><p>GTH-B Edition</p></div></article>
+    <article class="prize"><div class="emoji">🧸</div><div><h3>SAM Bear Keyring</h3><p>IVI mascot</p></div></article>
+    <article class="prize"><div class="emoji">🧴</div><div><h3>Hand Wash Set</h3></div></article>
+    <article class="prize"><div class="emoji">☕</div><div><h3>Coffee Gift Card</h3></div></article>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="signup">
+    <div><div class="section-label">How to sign up</div><h2 class="signup-heading">Claim your spot via the link.</h2><p>We’re recruiting <strong>12 Secret Hosts</strong> on a first-come, first-served basis. Please apply by <strong>October 29, 2026</strong>.</p><p>Questions? Contact <a class="email" href="mailto:Ayhoung.Jo@ivi.int">Ayhoung.Jo@ivi.int</a>.</p></div>
+    <div><div class="slots"><strong>12</strong>slots only · First come, first served</div><a class="cta" href="https://forms.cloud.microsoft/r/etq5hQBAJJ?origin=lprLink" target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" id="apply-button">Apply via Microsoft Forms <span aria-hidden="true">→</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="wrap foot"><span>With warmth,<br><strong>The TCS Team</strong></span><span>International Vaccine Institute · 2026</span></footer>
+</body>
+</html>
